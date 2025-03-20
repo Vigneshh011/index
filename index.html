@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carnage Symbiote</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background: url('media/1742452438734.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
@@ -34,15 +36,33 @@
             width: 100%;
             max-width: 600px;
             border-radius: 10px;
-            box-shadow: 0 0 10px red;
+            box-shadow: 0 0 20px red;
+            transition: transform 0.3s;
+        }
+        .image-section img:hover {
+            transform: scale(1.05);
         }
         .title {
-            font-size: 60px;
-            font-family: 'Impact', sans-serif;
+            font-size: 70px;
+            font-family: 'Orbitron', sans-serif;
             letter-spacing: 3px;
             text-transform: uppercase;
+            color: darkred;
+            text-shadow: 5px 5px 15px black, 2px 2px 10px red;
+        }
+        .info-section {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px red;
+        }
+        .info-section h2 {
             color: red;
-            text-shadow: 4px 4px 10px black;
+        }
+        .info-section p {
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -53,7 +73,16 @@
         <div class="image-section">
             <img src="media/1742452438734.jpg" alt="Carnage Symbiote">
         </div>
-        <p>Carnage is a blood-red alien symbiote that bonds with Cletus Kasady, creating a powerful and dangerous villain. Carnage is a supervillain appearing in American comic books published by Marvel Comics, usually as an adversary of Spider-Man and the archenemy of his father Venom, in particular the Eddie Brock incarnation of the character, although Carnage and Venom have joined forces when their goals have aligned. The character made its first appearance in The Amazing Spider-Man #361 (April 1992), and was created by writer David Michelinie and artist Mark Bagley, although the first published artwork of Carnage was penciled by Chris Marrinan. Stan Lee would also have some input in the character's name and attributes, pushing for a character who would be far darker and more vicious than Venom, due to the latter's more scrupulous character development.</p>
+        <div class="info-section">
+            <h2>Who is Carnage?</h2>
+            <p>Carnage is a blood-red alien symbiote that bonds with Cletus Kasady, creating one of the most dangerous villains in the Marvel Universe. Unlike Venom, Carnage is purely sadistic and psychopathic, lacking any moral compass. His chaotic nature makes him an unpredictable and nearly unstoppable force.</p>
+            
+            <h2>Abilities & Powers</h2>
+            <p>Carnage possesses enhanced strength, speed, and reflexes, surpassing both Spider-Man and Venom. He can regenerate from almost any injury, form weapons with his symbiote, and even plant parts of himself into others, infecting them with his symbiote offspring.</p>
+            
+            <h2>Notable Appearances</h2>
+            <p>Carnage made his first appearance in <strong>The Amazing Spider-Man #361</strong> (April 1992). Over time, he has appeared in major story arcs such as <em>Maximum Carnage</em>, <em>Absolute Carnage</em>, and <em>King in Black</em>, proving to be one of Marvel’s most formidable villains.</p>
+        </div>
     </div>
 </body>
 </html>
